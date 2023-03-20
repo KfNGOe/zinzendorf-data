@@ -2,7 +2,7 @@ name: Build Data data repo
 #collect and zip data and generates a release with the generated data files. 
 #The release is then pushed to the github repository.
 
-#on: push
+on: push
 
 jobs:
   build:
