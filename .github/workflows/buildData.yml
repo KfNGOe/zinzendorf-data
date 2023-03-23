@@ -1,4 +1,4 @@
-name: Build data repo
+name: Build Data data repo
 #collect and zip data and generates a release with the generated data files. 
 #The release is then pushed to the github repository.
 
@@ -15,9 +15,7 @@ jobs:
           java-version: "11"
           distribution: "adopt"
       - id: files
-        uses: jitterbit/get-changed-files@v1
-      - name: create file list
-        run: . dirFileList.sh
+        uses: jitterbit/get-changed-files@v1      
       - name: collect and zip data
         run: . ghactions-collZipData.sh
         env:
