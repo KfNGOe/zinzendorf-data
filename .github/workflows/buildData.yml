@@ -15,7 +15,9 @@ jobs:
           java-version: "11"
           distribution: "adopt"
       - id: files
-        uses: jitterbit/get-changed-files@v1      
+        uses: jitterbit/get-changed-files@v1
+      - name: create file list
+        run: . dirFileList.sh
       - name: collect and zip data
         run: . ghactions-collZipData.sh
         env:

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo starting ToC transformation
  
 inputDir="data/pdf/"
