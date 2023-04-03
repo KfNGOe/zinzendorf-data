@@ -44,8 +44,7 @@ fi
 
 if [ "$(ls -A data/)" ]; 
 then    
-    cp -r data/meta $outputDirTmp
-    cp -r data/xml $outputDirTmp
+    cp -r data/meta $outputDirTmp    
     
     echo "zip data"
     cd $outputDirTmp
