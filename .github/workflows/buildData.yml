@@ -34,7 +34,7 @@ jobs:
           body: Generated Release
           draft: false
           prerelease: false
-          files: ./data/data.zip      
+          files: ./data/data.zip
       - name: Trigger workflow in app repository
         run: |
           curl -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.ACCESS_TOKEN }}" https://api.github.com/repos/KfNGOe/zinzendorf-app/dispatches -d '{"event_type":"data-repository-dispatch","client_payload":{"unit":false,"integration":true}}'
